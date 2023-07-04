@@ -1,0 +1,64 @@
+MSV = Music Simulator Virtual
+README
+--------
+
+movements folder - stores the animation movements you can use
+seperate class for the depixelator?
+images folder - - holds the files with information in format color code - > dots, time stamps and image files (stencils)
+key controls to manipulate draw image: (does this by altering frame dimensions the image is set in)
+
+W - increase height
+D - increase width
+Z = decrease height
+A - decrease width
+
+REPL! In the animation class time stamp - figlet drawing diagram with time stamps labeled
+prompts with the first time stamp and after you type the command then after the last one it states okay
+ready to animate and the proper button functionalities are implemented (MAYBE HAVE A STATUS WITH RECORDING + READY TO ANIMATE)
+
+red ellipse - signals recording
+label - status - if animations are programed in via the repl
+
+commands - either an animation for the time stamp or back -- switch to latter time stamp
+first message - REPL ACTIVATED -- user types animate -- if valid -- meaning there is A FILE A FIGLET WITH THE
+TIMELINE IS PRINTED, WILL GO OFF OF THE SELECTED FiLE RADIO BUTTON IN THE DRAW CLASS WHICH WILL BE STORED IN THE IMAGES FOLDER
+forwards -- switches to the time stamp in front if null print invalid command try again
+set - makes it ready for animation, if there are any unfilled time stamp gaps then need to
+fill in with a random animation - making one animation the default maybe floating around + bouncing off the walls
+would be cool to make the object wrap the screen in translation but I don't know
+
+
+todo
+REPL - program the repl in the animation class + figlet child class
+- label connected to the repl to show animation status
+- if playing have a red ellipse in the top of the pane and disable the repl until the timeline completes
+then start it again with the corresponding prompt
+DOWNSIDE -- will have to toggle between animation screen and the repl but whatever -- at least the program doesn't need to quit for that
+
+depixletar
+animations - movements - rotate, rassemble, random float, jump (with the beat) float
+
+file saver - have an animations file folder and add functionality to write to the folder and reload in past animations labeled by song names
+should have the same name as the file but with anime after it and should store the list of animations by time block
+
+read up on Tarun's slack message topics and touch base with Siege
+
+start over
+
+no longer using the REPL class, breaks the program, going to have a seperate button called program which
+adds timeline grid to the pane and press buttons to program then press done to switch back out of it
+
+
+potential update -- for speed have a slider instead of three choices slow, medium and fast -- but for now it is fine I guess
+
+can program more movements these are just ones that I can start with then for each individual one we will need to figure out what animation you want -- ex -- > for free falling may want the transition of the feathers to be falling from side to side or whatever
+
+as a transition could make a move where one dot gets bigger and bigger and becomes the entire background?? coolio then start w
+
+translate along a path?? ooof
+
+BUG
+1. whenever you select a file to load to the animation that is the file which is loaded no matter which toggle button you press later
+2. also there is a blank toggle button in the group  - I am pretty sure this is due to a new line symbol in the drawfiles names list file but I am not sure
+3. Also whenever you are forming dot groups for the draw -- it will make a dot group out of white as a default whether you selected or drew with
+that color or not just because that is the default hue of the color picker.
